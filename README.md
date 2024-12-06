@@ -35,6 +35,6 @@ Install required packages:
 pip3 install -r requirements.txt
 ```
 ## Training
-ckpt link
+how to train and our ckpt link
 ## Citation
 
