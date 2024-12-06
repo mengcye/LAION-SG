@@ -1,14 +1,14 @@
-# LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations
+# <p align="center"> LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations </p>
 <p align="center">
   paper link
   </p>
 
-<p align="center">
-  by *Zejian li<sup>1</sup>, Chenye Meng<sup>1</sup>, Yize Li<sup>2</sup>, Ling Yang<sup>3</sup>, Shengyuan Zhang<sup>1</sup>, Jiarui Ma<sup>1</sup>, Jiayi Li<sup>2</sup>, Guang Yang<sup>4</sup>, Changyuan Yang<sup>4</sup>, Zhiyuan Yang<sup>4</sup>, Jinxiong Chang<sup>4</sup>, Lingyun Sun<sup>1</sup>*
-  </p>
+*<p align="center">
+  by Zejian li<sup>1</sup>, Chenye Meng<sup>1</sup>, Yize Li<sup>2</sup>, Ling Yang<sup>3</sup>, Shengyuan Zhang<sup>1</sup>, Jiarui Ma<sup>1</sup>, Jiayi Li<sup>2</sup>, Guang             Yang<sup>4</sup>, Changyuan Yang<sup>4</sup>, Zhiyuan Yang<sup>4</sup>, Jinxiong Chang<sup>4</sup>, Lingyun Sun<sup>1</sup>*
+</p>
 
-<p align="center">
-  *<sup>1</sup>Zhejiang University  <sup>2</sup>Jiangnan Uniersity  <sup>3</sup>Peking University  <sup>4</sup>Alibaba Group*
+*<p align="center">
+  <sup>1</sup>Zhejiang University  <sup>2</sup>Jiangnan Uniersity  <sup>3</sup>Peking University  <sup>4</sup>Alibaba Group*
   </p>
   
 ![teaser](https://github.com/mengcye/LAION-SG/blob/main/pics/figure1_teaser.png)
