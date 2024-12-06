@@ -24,6 +24,8 @@ Based on LAION-SG, we train a new foundation model SDXL-SG to incorporate struct
 Extensive experiments show advanced models trained on our LAION-SG boast significant performance improvements in complex scene generation over models on existing datasets. 
 We also introduce CompSG-Bench, a benchmark that evaluates models on compositional image generation, establishing a new standard for this domain. 
 
+## Dataset
+Our dataset has been published on Hugging Face. [Access the LAION-SG dataset](https://huggingface.co/datasets/mengcy/LAION-SG).
 ## Environment setup
 The following commands are tested with Python 3.10 and CUDA 11.8.
 
