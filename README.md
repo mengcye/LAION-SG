@@ -35,6 +35,44 @@ Install required packages:
 pip3 install -r requirements.txt
 ```
 ## Training
-how to train and our ckpt link
+We provide a script for training `sdxl-sg` using the LAION_SG dataset. Use the following command to start `trainer_laion.py`:
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes 8trainer_laion.py
+```
+
+## Inference
+We provide a simple inference script that allows generating images from the LAION-SG dataset.
+
+1. **Download Pre-trained Weights**  
+   Click [here](https://drive.google.com/file/d/1mdC3Np4KkV9V24K1gcyddsG5AIv5S0MT/view?usp=sharing) to download the pre-trained weights and place them in the root directory of the project.
+
+2. **Create an Output Directory**  
+   In the root directory of the project, create a folder named `output` to store the generated images:
+   ```bash
+   mkdir output
+   ```
+
+  Your project directory should look like this after step 2:
+  ```LAION-SG/
+  ├── configs/
+  ├── output/
+  ├── pics/
+  ├── pretrained/
+  ├── sgEncoderTraining/
+  ├── baseline3_100.pt
+  ├── LICENSE
+  ├── README.md
+  ├── requirements.txt
+  ├── test_laion.py
+  ├── trainer_laion.py
+  ```
+3. **Run the Inference Script**  
+   Use the following command to perform inference:
+
+   ```bash
+   python test_laion.py
+   ```
+   
+   The generated images will be saved in the `output/` folder as `{img_id}.jpg`, where `{img_id}` corresponds to the image ID from the LAION-SG dataset.
 ## Citation
 
