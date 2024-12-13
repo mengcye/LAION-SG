@@ -76,14 +76,11 @@ We provide a simple inference script that allows generating images from the LAIO
    The generated images will be saved in the `output/` folder as `{img_id}.jpg`, where `{img_id}` corresponds to the image ID from the LAION-SG dataset.
 ## Citation
 ```
-@misc{li2024laionsgenhancedlargescaledataset,
-      title={LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations}, 
-      author={Zejian Li and Chenye Meng and Yize Li and Ling Yang and Shengyuan Zhang and Jiarui Ma and Jiayi Li and Guang Yang and Changyuan Yang and Zhiyuan Yang and Jinxiong Chang and Lingyun Sun},
-      year={2024},
-      eprint={2412.08580},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.08580}, 
+@article{li2024laionsgenhancedlargescaledataset,
+    title={LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations}, 
+    author={Zejian Li and Chenye Meng and Yize Li and Ling Yang and Shengyuan Zhang and Jiarui Ma and Jiayi Li and Guang Yang and Changyuan Yang and Zhiyuan Yang and Jinxiong Chang and Lingyun Sun},
+    journal={arXiv 2412.08580},
+    year={2024}
 }
 ```
 
