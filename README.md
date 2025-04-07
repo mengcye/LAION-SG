@@ -1,6 +1,6 @@
 # <p align="center"> LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations </p>
 *<p align="center">
-  [Paper Link](https://arxiv.org/abs/2412.08580)*
+  [Paper Link](https://arxiv.org/abs/2412.08580), [Dataset Link](https://huggingface.co/datasets/mengcy/LAION-SG)
 </p>
 
 *<p align="center">
