@@ -12,7 +12,7 @@ from diffusers import (
 
 args = parse_args()
 
-device = torch.device("cuda" if torch.cuda.is_available() else "mps")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 args.val_batch_size = 1
 args.batch_size = 1
