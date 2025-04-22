@@ -101,6 +101,9 @@ model = create_model_and_transforms(
 
 checkpoint = torch.load("./baseline3_100.pt", map_location=device)
 
+model.load_state_dict(checkpoint['state_dict'])
+
+
 if __name__ == '__main__':
 
     real_images = []
@@ -110,8 +113,7 @@ if __name__ == '__main__':
 
     for i, batch in enumerate(val_dataloader):
 
-        all_imgs, all_triples, all_global_ids, all_isolated_items, all_text_prompts, all_original_sizes, all_crop_top_lefts, all_ids = [
-            x for x in batch]
+        all_imgs, all_triples, all_global_ids, all_isolated_items, all_text_prompts, all_original_sizes, all_crop_top_lefts, all_ids = batch
 
         label = all_text_prompts[0]
 
