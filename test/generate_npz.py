@@ -1,5 +1,4 @@
 import os
-os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 import torch
 import numpy as np
 from tqdm import tqdm
@@ -11,7 +10,6 @@ from configs.configs_laion import parse_args
 from transformers import AutoTokenizer, PretrainedConfig
 from sgEncoderTraining.sgEncoder.create_sg_encoder import create_model_and_transforms
 
-# 初始化 Accelerator
 accelerator = Accelerator(kwargs_handlers=[DistributedDataParallelKwargs(find_unused_parameters=True)])
 
 args = parse_args()
@@ -117,7 +115,7 @@ model, val_loader, pipeline = accelerator.prepare(model, val_loader, pipeline)
 pipeline.set_progress_bar_config(disable=True)
 
 if __name__ == '__main__':
-    # 为每个进程创建独立的保存目录
+    
     npz_dir = f"npz_files_{accelerator.process_index}"
     os.makedirs(npz_dir, exist_ok=True)
 
