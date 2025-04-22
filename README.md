@@ -40,6 +40,27 @@ We provide a script for training `sdxl-sg` using the LAION_SG dataset. Use the f
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes 8 trainer_laion.py
 ```
 
+## Testing
+
+1. **CLIP Score and FID**
+   Testing involves generating NPZ files and calculating evaluation metrics (CLIP scores and FID values). Follow these steps:
+   First, run the following command to generate NPZ files for test data:
+   ```bash
+   CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --multi_gpu --num_processes 8 generate_npz.py
+   ```
+   This will process images from your validation set using your trained model and save both real and generated images as NPZ files. After generating NPZ files, run the following commands to calculate CLIP scores and FID values:
+   ```bash
+   # Calculate CLIP scores
+   python caculate_clip_score.py
+   
+   # Calculate FID values
+   python caculate_fid.py
+   ```
+2. **IOU**
+   Run `test_iou.py` to evaluate IOU metrics on example images. This script compares predefined scene graphs with those detected from images using GPT-4o, calculating IoU scores for scene graphs, objects, and relations.
+   ```bash
+   python test_iou.py
+   ```
 ## Inference
 We provide a simple inference script that allows generating images from the LAION-SG dataset.
 
